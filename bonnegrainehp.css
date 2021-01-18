@@ -20,4 +20,4 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw;}
 #surface {position: relative; top: -0.55%; left: 0px; height: 3.85vw; width: 100vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
 #earth {position: relative; top: -0.6%; background-color: #AB7454; height: 1396px; z-index: 0;}
 #roots {position: relative; left: 23.474vw; top: -0.3%; height: 1221.19px; width: 60%; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
-#today {position: relative; top: -60%; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
+#today {position: relative; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
