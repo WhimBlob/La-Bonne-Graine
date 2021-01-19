@@ -3,7 +3,7 @@ body {position: absolute; height: 5037px; top: 0px; margin: 0px; font-family: "G
 h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; text-align: center; line-height: 20px;}
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
 h2 {font-family: "Craft Holic", Arial; font-size: 36px; padding: 38px; margin: 0px;}
-h3 {font-size: 24px; margin-bottom: 15[px;}
+h3 {font-size: 24px; margin-bottom: 15px;}
 ul {list-style: none; padding: 0px;}
 main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: center; overflow: hidden;}
 .triocards {position: relative; left: -72px; display: flex; width: 150vw; align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
