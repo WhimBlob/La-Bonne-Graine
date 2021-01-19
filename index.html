@@ -46,52 +46,83 @@
                 <div id = "roots"></div>
                 <p id = "today">DE QUOI AVEZ-VOUS BESOIN AUJOURD'HUI ?</p>
                 <ul id = "ulhero">
-                    <li id = "exotic">
-                        De saveurs exotiques
+                    <li id = "exoduo" class = "heroduo">
+                        <div id = "exotic" class = "herogo"></div>
+                        <p class = "herotext">De saveurs exotiques</p>
                     </li>
-                    <li id = "quick">
-                        De graines à résultats rapides
+                    <li id = "quickduo" class = "heroduo">
+                        <div id = "quick" class = "herogo"></div>
+                        <p class = "herotext">De graines à résultats rapides</p>
                     </li>
-                    <li id = "eggs">
-                        De graines faciles à planter
+                    <li id = "eggduo" class = "heroduo">
+                        <div id = "eggs" class = "herogo"></div>
+                        <p class = "herotext">De graines faciles à planter</p>
                     </li>
-                    <li id = "idea">
-                        De bons plans
+                    <li id = "ideaduo" class = "heroduo">
+                        <div id = "idea" class = "herogo"></div>
+                        <p class = "herotext">De bons plans</p>
                     </li>
-                    <li id = "advice">
-                        De conseils
+                    <li id = "adviduo" class = "heroduo">
+                        <div id = "advice" class = "herogo"></div>
+                        <p class = "herotext">De conseils</p>
                     </li>
-                    <li id = "earth">
-                        De connaître nos engagements
-                    </li>
+                    <li id = "eartduo" class = "heroduo">
+                        <div id = "planet" class = "herogo"></div>
+                        <p class = "herotext">De connaître nos engagements</p>
                 </ul>
             </div>
         </div>
 <!-- Selections -->
         <div id = "selections">
-            <ul id = "selectul">
-                <li>La sélection de la bonne graine</li>
-                <li>La sélection des utilisateurs</li>
-            </ul>
+                <h2>La sélection de la bonne graine</h2>
             <div class = "leftarrow"></div>
             <ul class = "triocards">
                 <li id = "selecard1" class = "cards">
                     <div id = "selecard1img" class = cardimgs></div>
-                    <p id = "selecard1name" class = "cardname"></p>
-                    <p id = "selecard1price" class = "cardprice"></p>
-                    <p id = "selecard1ava" class = "cardava"></p>
+                    <p id = "selecard1name" class = "cardname">Ramasse-fruit</p>
+                    <p id = "selecard1price" class = "cardprice">1.80€</p>
+                    <p id = "selecard1quan" class = "cardquan"></p>
+                    <p id = "selecard1ava" class = "cardava">En stock</p>
                 </li>
                 <li id = "selecard2" class = "cards">
                     <div id = "selecard2img" class = cardimgs></div>
-                    <p id = "selecard2name" class = "cardname"></p>
-                    <p id = "selecard2price" class = "cardprice"></p>
-                    <p id = "selecard2ava" class = "cardava"></p>
+                    <p id = "selecard2name" class = "cardname">Carré potager 12 compartiments</p>
+                    <p id = "selecard2price" class = "cardprice">1.80€</p>
+                    <p id = "selecard2quan" class = "cardquan"></p>
+                    <p id = "selecard2ava" class = "cardava">En stock</p>
                 </li>
                 <li id = "selecard3" class = "cards">
                     <div id = "selecard3img" class = cardimgs></div>
-                    <p id = "selecard3name" class = "cardname"></p>
+                    <p id = "selecard3name" class = "cardname">Salades : Pour une année douce, avec une pointe d'amertume ou franchement relevée ?</p>
                     <p id = "selecard3price" class = "cardprice"></p>
+                    <p id = "selecard3quan" class = "cardquan"></p>
                     <p id = "selecard3ava" class = "cardava"></p>
+                </li>
+            </ul>
+            <div class = "rightarrow"></div>
+            <h2>La sélection des utilisateurs</h2>
+            <div class = "leftarrow"></div>
+            <ul class = "triocards">
+                <li id = "selecard4" class = "cards">
+                    <div id = "selecard4img" class = cardimgs></div>
+                    <p id = "selecard4name" class = "cardname">Gants pour travaux ergo</p>
+                    <p id = "selecard4price" class = "cardprice">3,22€</p>
+                    <p id = "selecard4quan" class = "cardquan"></p>
+                    <p id = "selecard4ava" class = "cardava">En stock</p>
+                </li>
+                <li id = "selecard5" class = "cards">
+                    <div id = "selecard5img" class = cardimgs></div>
+                    <p id = "selecard5name" class = "cardname">Courgette Lebanon</p>
+                    <p id = "selecard5price" class = "cardprice">1,80€</p>
+                    <p id = "selecard5quan" class = "cardquan">2g</p>
+                    <p id = "selecard5ava" class = "cardava">En stock</p>
+                </li>
+                <li id = "selecard6" class = "cards">
+                    <div id = "selecard6img" class = cardimgs></div>
+                    <p id = "selecard6name" class = "cardname">Laitue Cocarde Bio</p>
+                    <p id = "selecard6price" class = "cardprice">1,80€</p>
+                    <p id = "selecard6quan" class = "cardquan">0,2g</p>
+                    <p id = "selecard6ava" class = "cardava">En stock</p>
                 </li>
             </ul>
             <div class = "rightarrow"></div>
@@ -100,23 +131,29 @@
         <div id = "why">
             <h2>Pourquoi La Bonne Graine ?</h2>
             <ul id = "whys">
-                <li id = "quality">
-                    Une qualité germinative
+                <li id = "quaduo" class = "whyduo">
+                    <div id = "quality" class = "whyogo"></div>
+                    <p class = "whytext">Une qualité germinative</p>
                 </li>
-                <li id = "transparency">
-                    De graines à résultats rapides
+                <li id = "transduo" class = "whyduo">
+                    <div id = "transparency" class = "whyogo"></div>
+                    <p class = "whytext">Une transparence</p>
                 </li>
-                <li id = "diversity">
-                    De graines faciles à planter
+                <li id = "divduo" class = "whyduo">
+                    <div id = "diversity" class = "whyogo"></div>
+                    <p class = "whytext">Une diversité</p>
                 </li>
-                <li id = "authenticity">
-                    De bons plans
+                <li id = "autduo" class = "whyduo">
+                    <div id = "authenticity" class = "whyogo"></div>
+                    <p class = "whytext">Une authenticité</p>
                 </li>
-                <li id = "prices">
-                    De conseils
+                <li id = "priduo" class = "whyduo">
+                    <div id = "prices" class = "whyogo"></div>
+                    <p class = "whytext">Des prix justes</p>
                 </li>
-                <li id = "share">
-                    De connaître nos engagements
+                <li id = "shaduo" class = "whyduo">
+                    <div id = "share" class = "whyogo"></div>
+                    <p class = "whytext">Un partage</p>
                 </li>
             </ul>
         </div>
@@ -127,21 +164,24 @@
             <ul class = "triocards">
                 <li id = "seacard1" class = "cards">
                     <div id = "seacard1img" class = cardimgs></div>
-                    <p id = "seacard1name" class = "cardname"></p>
-                    <p id = "seacard1price" class = "cardprice"></p>
-                    <p id = "seacard1ava" class = "cardava"></p>
+                    <p id = "seacard1name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                    <p id = "seacard1price" class = "cardprice">1,80€</p>
+                    <p id = "seacard1quan" class = "cardquan">2g</p>
+                    <p id = "seacard1ava" class = "cardava">En stock</p>
                 </li>
                 <li id = "seacard2" class = "cards">
                     <div id = "seacard2img" class = cardimgs></div>
-                    <p id = "seacard2name" class = "cardname"></p>
-                    <p id = "seacard2price" class = "cardprice"></p>
-                    <p id = "seacard2ava" class = "cardava"></p>
+                    <p id = "seacard2name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                    <p id = "seacard2price" class = "cardprice">1,80€</p>
+                    <p id = "seacard2quan" class = "cardquan">2g</p>
+                    <p id = "seacard2ava" class = "cardava">En stock</p>
                 </li>
                 <li id = "seacard3" class = "cards">
                     <div id = "seacard3img" class = cardimgs></div>
-                    <p id = "seacard3name" class = "cardname"></p>
-                    <p id = "seacard3price" class = "cardprice"></p>
-                    <p id = "seacard3ava" class = "cardava"></p>
+                    <p id = "seacard3name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                    <p id = "seacard3price" class = "cardprice">1,80€</p>
+                    <p id = "seacard3quan" class = "cardquan">2g</p>
+                    <p id = "seacard3ava" class = "cardava">En stock</p>
                 </li>
             </ul>
             <div class = "rightarrow"></div>
@@ -150,19 +190,22 @@
         <div id = "divknowmore">
             <ul id = "trioknow">
                 <li id = "knowcard1" class = "knowcards">
-                    <div id = "knowcard1img" class = "knowcardimgs"></div>
-                    <p class = "knowmore"></p>
-                    <h2 id = "origin"></h2>
+                    <div id = "knowcard1img" class = "knowcardimgs">
+                        <h2 id = "origin">Origine</h2>
+                    </div>
+                    <p class = "knowmore">En savoir plus</p>
                 </li>
                 <li id = "knowcard2" class = "knowcards">
-                    <div id = "knowcard2mg" class = "knowcardimgs"></div>
-                    <p class = "knowmore"></p>
-                    <h2 id = "company"></h2>
+                    <div id = "knowcard2img" class = "knowcardimgs">
+                        <h2 id = "company">Accompagnement</h2>
+                    </div>
+                    <p class = "knowmore">En savoir plus</p>
                 </li>
                 <li id = "knowcard3" class = "knowcards">
-                    <div id = "knowcard3img" class = "knowcardimgs"></div>
-                    <p class = "knowmore"></p>
-                    <h2 id = "commit"></h2>
+                    <div id = "knowcard3img" class = "knowcardimgs">
+                        <h2 id = "commit">Engagements</h2>
+                    </div>
+                    <p class = "knowmore">En savoir plus</p>
                 </li>
             </ul>
         </div>
@@ -170,23 +213,23 @@
 <!-- Footer -->
     <footer>
         <ul>
-            <ul>Informations
-                <li>Qui sommes-nous ?</li>
-                <li>Conditions générales de vente</li>
-                <li>Mentions légales</li>
-                <li>Nos Engagements</li>
+            <ul class = "footext"><h3>Informations</h3>
+                <li><br>Qui sommes-nous ?</li>
+                <li><br>Conditions générales de vente</li>
+                <li><br>Mentions légales</li>
+                <li><br>Nos Engagements</li>
             </ul>
-            <ul>Une question ?
-                <li>FAQ</li>
-                <li>Formulaire de contact</li>
-                <li>Nous contacter par mail</li>
-                <li>Lundi - Vendred : 10h00 - 20h00</li>
+            <ul class = "footext"><h3>Une question ?</h3>
+                <li><br>FAQ</li>
+                <li><br>Formulaire de contact</li>
+                <li><br>Nous contacter par mail</li>
+                <li><br>Lundi - Vendred : 10h00 - 20h00</li>
             </ul>
-            <ul>Extras
-                <li>Espace Presse</li>
-                <li>Certificat bio</li>
+            <ul class = "footext"><h3>Extras</h3>
+                <li><br>Espace Presse</li>
+                <li><br>Certificat bio</li>
             </ul>
-            <ul>Moyens de paiement
+            <ul class = "footext"><h3>Moyens de paiement</h3>
                 <li id = "AE" class = "pay"></li>
                 <li id = "cirrus" class = "pay"></li>
                 <li id = "maestro" class = "pay"></li>

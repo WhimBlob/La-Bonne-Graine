@@ -1,9 +1,13 @@
 .logo {background-image: url("images/Logo.svg");}
-body {position: absolute; height: 5037px; top: 0px; margin: 0px;}
+body {position: absolute; height: 5037px; top: 0px; margin: 0px; font-family: "Graphik", Arial; font-weight: 500;}
 h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; text-align: center; line-height: 20px;}
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
-ul {list-style: none;}
-main {position: absolute; top: 80px; height: 4983px; width: 100vw;}
+h2 {font-family: "Craft Holic", Arial; font-size: 36px; padding: 38px; margin: 0px;}
+h3 {font-size: 24px; margin-bottom: 15px;}
+ul {list-style: none; padding: 0px;}
+main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: center; overflow: hidden;}
+.triocards {position: relative; left: -72px; display: flex; width: 150vw; align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
+.cards {position: relative; height: 203px; width: 144px; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px;}
 
 /* Fixed Header */
 #absheader {display: none; }
@@ -14,10 +18,77 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw;}
         .glass {background-image: url("images/Loupe.svg"); background-size: contain; width: 31px; height: 30px;}
         .account {background-image: url("images/account.svg"); background-size: contain; width: 24px; height: 30px;}
         .checkout {background-image: url("images/checkout.svg"); background-size: contain; width: 35.11px; height: 30px;}
+
 /* Hero */
-#hero {position: relative; top: 0px; height: 40.81%; background-color: #BCD5E6;}
+#hero {position: relative; top: 0px; height: 1300px; background-color: #BCD5E6;}
 #herologo {z-index: 100; position: relative; left: 39.2157%; width: 21.3vw; height: 22.775vw; background-image: url("images/Logo.svg"); background-size: contain;}
-#surface {position: relative; top: -0.55%; left: 0px; height: 3.85vw; width: 100vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
-#earth {position: relative; top: -0.6%; background-color: #AB7454; height: 1396px; z-index: 0;}
-#roots {position: relative; left: 23.474vw; top: -0.3%; height: 1221.19px; width: 60%; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
-#today {position: relative; top: -60%; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
+#surface {position: relative; top: -0.8%; left: 0px; height: 3.85vw; width: 100vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
+#earth {position: relative; top: -1%; background-color: #AB7454; height: 1228px; z-index: 0;}
+#roots {position: relative; left: calc(50vw - 85px); top: -0.3%; height: 1221.19px; width: 60%; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
+#today {position: absolute; top: 25px; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
+.heroduo {width: 160px; height: 105px; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute;}
+    .heroduo p {margin: 0px; }
+    .herogo {background-size: contain; background-repeat: no-repeat; height: 56px; width: 56px;}
+    .herotext {position: relative; top: 10px;}
+    #exoduo {top: 225px; left: calc(50vw - 134px);}
+        #exotic {background-image: url(images/map.svg);}
+    #quickduo {top: 390px; left: calc(50vw - 35px);}
+        #quick {background-image: url(images/field.svg);}
+    #eggduo {top: 550px; left: calc(50vw - 150px);} 
+        #eggs {background-image: url(images/egg.svg);}
+    #ideaduo {top: 700px; left: calc(50vw + 10px)}
+        #idea {background-image: url(images/idea.svg);}
+    #adviduo {top: 830px; left: 0px;}
+        #advice {background-image: url(images/advice.svg);}
+    #eartduo {top: 1032px; left: 153px;}
+        #planet {background-image: url(images/earth.svg);}
+
+/* Selections */
+#selections {position: relative; top: 0px; overflow: hidden;}
+.cardimgs {width: 144px; height: 144px; background-size: contain;}
+#selecard1img {background-image: url(images/ramasse-fruit.svg);}
+#selecard2img {background-image: url(images/carré\ potager.svg);}
+#selecard3img {background-image: url(images/salade.svg);}
+#selecard3name {width: 135px;}
+#selecard4img {background-image: url(images/courgette.png);}
+#selecard5img {background-image: url(images/gant.png);}
+#selecard6img {background-image: url(images/cocarde.png);}
+.cardname {position: absolute; top: 148px; left: 4px; width: 83px; margin: 0px;}
+.cardprice {position: absolute; top: 148px; right: 4px; margin: 0px;}
+.cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
+.cardquan {position: absolute; bottom: 4px; left: 4px; margin: 0px;}
+
+/* Why */
+#why {background-color: #EAF7FF;}
+#whys {display: flex; flex-wrap: wrap; margin: 0px;}
+.whyduo {width: 100px; height: 115px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: 12vw; padding-bottom: 74px;}
+.whyogo {position: relative; background-size: contain; width: 66px; height: 66px;}
+.whytext {margin: 0px;}
+#quality {background-image: url(images/plant.svg);}
+#transparency {background-image: url(images/transparence.svg);}
+#diversity {background-image: url(images/diversity.svg);}
+#authenticity {background-image: url(images/bee.svg);}
+#prices {background-image: url(images/prices.svg);}
+#share {background-image: url(images/share.svg);}
+#transduo {margin-right: 12vw;}
+#autduo {margin-right: 12vw;}
+#shaduo {margin-right: 12vw;}
+
+/* Seasonal Products */
+#seacard1img {background-image: url(images/radis.svg);}
+#seacard2img {background-image: url(images/radis2.svg);}
+#seacard3img {background-image: url(images/chou.svg);}
+
+/* Know More */
+#divknowmore {background-color: #6DADBF;}
+.knowcards {position: relative; margin-top: 77px; margin-bottom: 110px; width: 243px; height: 438px;}
+.knowcardimgs {height: 374px; width: 243px; background-size: cover; margin: 18px;}
+#knowcard1img {background-image: url(images/engagements.svg);}
+#knowcard2img {background-image: url(images/origin.svg);}
+#knowcard3img {background-image: url(images/accompagnement.svg);}
+.knowmore {position: absolute; font-size: 24px; font-weight: 400; background-color: #C6E6B0; border: solid 0.5px black; width: 223px; text-align: center; padding: 10px; margin-left: 17px;}
+#trioknow {position: relative; left: -240px; display: flex; width: 240vw; align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
+
+/* Footer */
+footer {position: absolute; bottom: -200px; height: 1106px; text-align: center; width: 100vw; margin-top: 37px; background-color: #C6E6B0;}
+.footext {margin-top: 38px; margin-bottom: 77px; position: relative;}
