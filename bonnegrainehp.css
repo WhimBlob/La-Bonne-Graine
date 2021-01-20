@@ -153,6 +153,24 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #eartduo {top: 325vw; left: 53vw;}
  }
 
+ @media screen and (min-width: 500px) {
+    #exoduo {top: 72vw; left: 15vw;}
+    #quickduo {top: 124vw; left: 47vw;}
+    #eggduo {top: 175vw; left: 10vw;} 
+    #ideaduo {top: 223vw; left: 60vw;}
+    #adviduo {top: 264vw; left: 5vw;}
+    #eartduo {top: 324vw; left: 55vw;}
+ }
+
+ @media screen and (min-width: 600px) {
+    #exoduo {left: 18vw;}
+    #quickduo {left: 50vw;}
+    #eggduo {left: 14vw;} 
+    #ideaduo {top: 224vw; left: 63vw;}
+    #adviduo {top: 265vw; left: 9vw;}
+    #eartduo {top: 326vw; left: 58vw;}
+ }
+
  /* Responsive tablet */
  @media screen and (min-width: 768px) {
     /* Cards */
@@ -194,7 +212,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     /* Why */
     #why {height: 34.3vw;}
     #whys {margin-top: 0px; margin-bottom: 0px;}
-    .whyogo {position: relative; background-size: contain; height: 5.76vw; width: 5.76vw; background-repeat: no-repeat;}
+    .whyogo {position: relative; background-size: contain; height: 5.76vw; width: 5.76vw; background-repeat: no-repeat; max-width: none;}
     .whyduo {width: 11vw;}
     .whytext {position: relative; top: 1vw;}
     /* Seasonal Products */
@@ -256,6 +274,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 24px;}
     #selecard3name {width: calc(100% - 8px);}
+    .whytext {font-size: 18px;}
     .knowmore {font-size: 24px;}
     h2 {font-size: 48px;}
     h3 {font-size: 24px; margin-bottom: 15px;}
@@ -267,35 +286,52 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
         .glass {width: 2.15vw; height: 2.08vw;}
         .account {width: 1.6667vw; height: 2.08vw;}
         .checkout {width: 2.44vw; height: 2.08vw;}
+        #newsli {margin-bottom: 1vw;}
 
 @media screen and (min-width: 1900px) {
     nav {font-size: 14px;}
     #absheader h1 {position: relative; font-size: 56px;}
     #absheader h1 span {position: relative; font-size: 36px;}
+    #fixheader h1 {top: 1.8vw;}
+    #fixh1 {font-size: 36px;}
+    #fixh1 span {font-size: 18px;}
     #today {font-size: 56px;}
     .herotext {font-size: 24px; width: 11vw;}
     .cards {font-size: 24px;}
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 36px;}
     #selecard3name {width: calc(100% - 8px);}
+    .whytext {font-size: 24px;}
     h2 {font-size: 56px;}
     h3 {font-size: 36px; margin-bottom: 15px;}
     .footext {font-size: 18px;}
     .knowmore {font-size: 36px;}
+    #newsbloc li {font-size: 14px;}
+    #ltd {font-size: 14px;}
+    #newsli label {font-size: 14px; top: 24px;}
  }
 
  @media screen and (min-width: 2560px) {
     nav {font-size: 24px;}
     #absheader h1 {position: relative; font-size: 76px;}
     #absheader h1 span {position: relative; font-size: 60x;}
+    #fixheader h1 {top: 1.95vw;}
+    #fixh1 {font-size: 48px;}
+    #fixh1 span {font-size: 24px;}
     #today {font-size: 64px;}
     .herotext {font-size: 36px; width: 11vw;}
     .cards {font-size: 36px;}
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 48px;}
+    .whytext {font-size: 36px;}
     #selecard3name {width: calc(100% - 8px);}
     h2 {font-size: 64px;}
     h3 {font-size: 48px; margin-bottom: 15px;}
     .footext {font-size: 24px;}
     .knowmore {font-size: 48px;}
+    #newsbloc {width: 15vw;}
+    #ltd {font-size: 18px; width: 15vw;}
+    #newsbloc li {font-size: 18px;}
+    #newsli label {font-size: 18px; top: 26px;}
+
  }
