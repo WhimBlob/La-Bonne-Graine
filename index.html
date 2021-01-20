@@ -10,20 +10,22 @@
 <!-- Header absolute -->
         <div id = "absheader">
             <div id = "logoheader" class = "logo"></div>
-            <h1>La Bonne Graine<span><br>Jardinez Authentique !</span></h1>
+            <div id = "fixtext">
+                <h1>La Bonne Graine<span><br>Jardinez Authentique !</span></h1>
+                <nav>
+                    <li>GRAINES</li>
+                    <li>POMMES DE TERRE</li>
+                    <li>BULBES POTAGERS</li>
+                    <li>PETITS FRUITS</li>
+                    <li>FLEURS</li>
+                    <li>IDÉES CADEAUX</li>
+                    <li>ACCESSOIRES</li>
+                </nav>
+            </div>
             <ul id = "triologo">
-                <li id = absaccount></li>
-                <li id = absglass></li>
-                <li id = abscheckout></li>
-            </ul>
-            <ul id = nav>
-                <li>GRAINES</li>
-                <li>POMMES DE TERRE</li>
-                <li>BULBES POTAGERS</li>
-                <li>PETITS FRUITS</li>
-                <li>FLEURS</li>
-                <li>IDÉES CADEAUX</li>
-                <li>ACCESSOIRES</li>
+                <li id = absaccount class = account></li>
+                <li id = absglass class = glass></li>
+                <li id = abscheckout class = checkout></li>
             </ul>
         </div>
 <!-- Header fixed -->
@@ -229,36 +231,40 @@
                 <li><br>Nous contacter par mail</li>
                 <li><br>Lundi - Vendred : 10h00 - 20h00</li>
             </ul>
-            <ul class = "footext"><h3>Extras</h3>
+            <ul class = "footext" id = "extras"><h3>Extras</h3>
                 <li><br>Espace Presse</li>
                 <li><br>Certificat bio</li>
             </ul>
-            <ul id = "paymean" class = "footext"><h3>Moyens de paiement</h3>
-                <li id = "AE" class = "pay"></li>
-                <li id = "cirrus" class = "pay"></li>
-                <li id = "maestro" class = "pay"></li>
-                <li id = "mastercard" class = "pay"></li>
-                <li id = "visa" class = "pay"></li>
-                <li id = "paypal" class = "pay"></li>
-                <li id = "cb" class = "pay"></li>
+            <ul class = "footext" id = "paymean"><h3>Moyens de paiement</h3>
+                    <ul id = "credit">
+                    <li id = "AE" class = "pay"></li>
+                    <li id = "cirrus" class = "pay"></li>
+                    <li id = "maestro" class = "pay"></li>
+                    <li id = "mastercard" class = "pay"></li>
+                    <li id = "visa" class = "pay"></li>
+                    <li id = "paypal" class = "pay"></li>
+                    <li id = "cb" class = "pay"></li>
+                </ul>
             </ul>
         </section>
         <section id = "lineonward">
             <div id = "linefooter"></div>
-            <ul>
-                <li>Inscrivez-vous à la newsletter</li>
-                <li id ="newsli">
-                        <label for = "newsletter">E-mail</label>
-                    <input type = "text" id = "newsletter">
-                </li>
-            </ul>
-            <ul id ="footogos">
-                <li id = "pinterest" class = "footogo"></li>
-                <li id = "instagram" class = "footogo"></li>
-                <li id = "facebook" class = "footogo"></li>
-                <li id = "twitter" class = "footogo"></li>
-            </ul>
-            <li id = "ltd">La Bonne Graine 2013 | Marque déposée</li>
+            <section id = "afterline">
+                <ul id = "newsbloc">
+                    <li>Inscrivez-vous à la newsletter</li>
+                    <li id ="newsli">
+                            <label for = "newsletter">E-mail</label>
+                        <input type = "text" id = "newsletter">
+                    </li>
+                    <ul id ="footogos">
+                        <li id = "pinterest" class = "footogo"></li>
+                        <li id = "instagram" class = "footogo"></li>
+                        <li id = "facebook" class = "footogo"></li>
+                        <li id = "twitter" class = "footogo"></li>
+                    </ul>
+                </ul>
+                <p id = "ltd">La Bonne Graine 2013 | Marque déposée</p>
+            </section>
         </section>
     </footer>
  <script type="text/javascript" src = "bonnegrainehp.js"></script>

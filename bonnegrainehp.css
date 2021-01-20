@@ -1,11 +1,12 @@
 .logo {background-image: url("images/Logo.svg");}
-body {position: absolute; height: 5160px; top: 0px; margin: 0px; font-family: "Graphik", Arial; font-weight: 500; width: 100vw;}
+body {position: absolute; top: 0px; margin: 0px; font-family: "Graphik", Arial; font-weight: 500; width: 100vw;}
+main {position: relative; top: 80px; display: flex; flex-direction: column; width: 100vw; text-align: center; overflow: hidden;}
 h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; text-align: center; line-height: 20px;}
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
 h2 {font-family: "Craft Holic", Arial; font-size: 36px; padding: 38px; margin: 0px;}
-h3 {font-size: 24px; margin-bottom: 15px;}
+h3 {font-size: 18px; margin-bottom: 15px;}
 ul {list-style: none; padding: 0px;}
-main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: center; overflow: hidden;}
+nav {list-style: none;}
 
 /* Cards */
 .triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
@@ -17,8 +18,8 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: c
 .cardimgs {min-width: 144px; width: 38.46vw; min-height: 144px; height: 38.46vw; background-size: contain; background-repeat: no-repeat;}
 
 /* Fixed Header */
-#absheader {display: none; }
-#fixheader {position: fixed; top: 0px; height: 80px; width: 100vw; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); display: flex; z-index: 200; background-color: white;}
+#absheader {display: none;}
+#fixheader {position: fixed; top: 0px; height: 80px; width: 100vw; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); display: flex; z-index: 101; background-color: white;}
     #burger {position: relative; left: 5%; top: 31.5px; background-image: url("images/Burger.svg"); background-size: contain; height: 15px; width: 23px; }
     #fixheader h1 {position: relative; top: 24px; left: 10%; margin: 0px;}
     #triologofix {position: absolute; top: 24px; right: 5%; height: 30px; width: 30%; max-width: 131px; display: flex; justify-content: space-between; margin: 0px;}
@@ -28,13 +29,15 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: c
 
 /* Hero */
 #hero {position: relative; top: 0px; height: 395.7vw; background-color: #BCD5E6; overflow: hidden;}
-#herologo {z-index: 100; position: relative; left: 39.2157%; width: 21.3vw; height: 22.775vw; background-image: url("images/Logo.svg"); background-size: contain; max-width: 164px; max-height: 175.35px;}
-#surface {position: relative; top: -0.8%; left: 0px; height: 3.85vw; width: 100vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
+#herologo {z-index: 100; position: relative; left: 39.2157%; width: 21.3vw; height: 22.775vw; background-image: url("images/Logo.svg"); background-size: contain;}
+/* Earth */
+#surface {position: relative; top: -0.8%; left: -0.5vw; height: 3.85vw; width: 101vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
 #earth {position: relative; top: -1%; background-color: #AB7454; height: 373vw; z-index: 0;}
 #roots {position: relative; left: 23vw; top: -0.3%; height: 325vw; width: 60vw; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
 #today {position: absolute; top: 25px; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
-.heroduo {width: 160px; height: 105px; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute;}
-    .heroduo p {margin: 0px; }
+/* Icon duos */
+.heroduo {width: 160px; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute;}
+    .heroduo p {margin: 0px;}
     .herogo {background-size: contain; background-repeat: no-repeat; height: 17.5vw; width: 17.5vw;}
     .herotext {position: relative; top: 10px;}
     #exoduo {top: 71vw; left: 7vw;}
@@ -53,7 +56,7 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: c
 /* Selections */
 #selections {position: relative; top: 0px; overflow: hidden;}
 #selecard1img {background-image: url(images/ramasse-fruit.svg);}
-#selecard2img {background-image: url(images/carrépotager.svg);}
+#selecard2img {background-image: url(images/carrepotager.svg);}
 #selecard3img {background-image: url(images/salade.svg);}
 #selecard3name {width: 135px;}
 #selecard4img {background-image: url(images/courgette.svg);}
@@ -63,7 +66,7 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: c
 /* Why */
 #why {background-color: #EAF7FF;}
 #whys {display: flex; flex-wrap: wrap; margin: 4.87vw; justify-content: space-between;}
-.whyduo {width: 100px; height: 115px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-bottom: 74px;}
+.whyduo {width: 100px; display: flex; flex-direction: column; align-items: center; padding-bottom: 74px;}
 .whyogo {position: relative; background-size: contain; min-width: 66px; max-width: 88px; min-height: 66px; max-width: 88px;}
 .whytext {margin: 0px;}
 #quality {background-image: url(images/plant.svg);}
@@ -79,24 +82,27 @@ main {position: absolute; top: 80px; height: 4983px; width: 100vw; text-align: c
 #seacard3img {background-image: url(images/chou.svg);}
 
 /* Know More */
-#divknowmore {background-color: #6DADBF;}
-.knowcards {position: relative; margin-top: 77px; margin-bottom: 110px; width: 64.935vw; height: 116.82vw;}
-.knowcardimgs {position: relative; height: 100vw; width: 64.935vw; background-size: cover; margin: 18px; background-repeat: no-repeat;}
+#divknowmore {background-color: #6DADBF; height: 163.9vw;}
+#trioknow {position: relative; top: 20.53vw; left: -57.7vw; margin: 0px; display: flex; width: calc(215.2vw); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
+.knowcards {position: relative; width: 64.935vw; height: 116.82vw;}
+.knowcardimgs {position: relative; height: 100vw; width: 64.935vw; background-size: cover; margin-bottom: 18px; background-repeat: no-repeat;}
 #knowcard1img {background-image: url(images/engagements.svg);}
 #knowcard2img {background-image: url(images/origin.svg);}
 #knowcard3img {background-image: url(images/accompagnement.svg);}
-.knowmore {position: absolute; font-size: 24px; font-weight: 400; background-color: #C6E6B0; border: solid 0.5px black; width: 64.935vw; padding-top: 2vw; padding-bottom: 2vw; text-align: center; margin-left: 17px;}
-#trioknow {position: relative; left: -61.88vw; display: flex; width: calc(215.2vw); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
+/* Image text */
 .knowcardimgs h2 {position: absolute;}
 #origin {left: -70px; bottom: 40px;}
 #company {top: -51px; left: -56px;}
 #commit {top: -30px; right: -50px;}
+/* Rectangle */
+.knowmore {position: absolute; font-size: 24px; font-weight: 400; background-color: #C6E6B0; border: solid 0.5px black; width: 64.935vw; padding-top: 2vw; padding-bottom: 2vw; text-align: center; margin: 0px;}
 
 /* Footer */
-footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margin-top: 37px; background-color: #C6E6B0;}
+footer {position: relative; text-align: center; width: 100vw; background-color: #C6E6B0;}
+#linebackward {position: relative; top: 40px;}
 .footext {margin-top: 38px; margin-bottom: 77px; position: relative;}
 /* Paymeans */
-#paymean {width: 78vw; margin-right: 11vw; margin-left: 11vw; margin-bottom: 38px; display: flex; flex-wrap: wrap; justify-content: center; text-align: center;}
+#credit {width: 78vw; margin-right: 11vw; margin-left: 11vw; display: flex; flex-wrap: wrap; justify-content: center; text-align: center;}
 .pay {height: 32px; width: 53px; background-size: contain; overflow: hidden; margin: 4px;}
 #AE {background-image: url(images/americanexpress.svg);}
 #cirrus {background-image: url(images/cirrus.svg);}
@@ -105,13 +111,19 @@ footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margi
 #visa {background-image: url(images/visa.svg);}
 #paypal {background-image: url(images/paypal.svg);}
 #cb {background-image: url(images/cb.svg);}
-#lineonward {display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; font-size: 12px;}
-#linefooter {width: 58.668vw; border: solid black 2px; margin-bottom: 38px;}
-#newsli {position: relative; margin: 11px;}
-#newsletter {position: relative; border: solid; border-color: black; border-radius: 0px; border-width: 0.5px; background: transparent; text-indent: 20px; width: 211px; height: 26px;}
-#newsli label {position: absolute; user-select: none; top: 8px; left: 15px;}
+#paymean {margin-bottom: 0px;}
+/* From the middle line onward */
+#lineonward {position: relative; top: 37px; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; font-size: 12px;}
+#linefooter {width: 58.668vw; background: black; border: solid black 2px; margin-top: 38px; margin-bottom: 38px; border-radius: 8px;}
+#afterline {display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;}
+/* Newsletter */
+#newsli {position: relative; width: 217px; height: 30px; margin-bottom: 11px;}
+#newsletter {position: relative; border: solid; border-color: black; border-radius: 0px; border-width: 0.5px; background: transparent; width: 211px; height: 26px;}
+#newsli label {position: relative; user-select: none; top: 21px; right: 75px;}
+#newsbloc {width: 100vw; margin-right: 0px; display: flex; flex-direction: column; align-items: center;}
+/* Social medias */
 #footogos {display: flex; width: 139px; justify-content: space-between; align-items: center;}
-.footogo {width: 23px; height: 23px; background-size: contain; background-repeat: no-repeat;}
+.footogo {position: relative; top: 11px; width: 23px; height: 23px; background-size: contain; background-repeat: no-repeat;}
 #pinterest {background-image: url(images/pinterest2.svg); width: 17px;}
 #instagram {background-image: url(images/instagram.svg);}
 #facebook {background-image: url(images/facebook2.svg);}
@@ -120,7 +132,7 @@ footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margi
 
 /* Responsive mobile */
 @media screen and (min-width: 375px) {
-    body {height: 5223px;}
+    #surface {left: 0px; width: 103vw;}
     .cardname {top: calc(38.46vw + 4px);}
     .cardprice {top: calc(38.46vw + 4px);}
     #exoduo {top: 72vw; left: 10vw;}
@@ -132,8 +144,7 @@ footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margi
 }
 
 @media screen and (min-width: 425px) {
-    body {height: 5531px;}
-    #paymean {width: 70vw; margin-right: 15vw; margin-left: 15vw;}
+    #credit {width: 70vw; margin-right: 15vw; margin-left: 15vw;}
     #exoduo {top: 73vw; left: 13vw;}
     #quickduo {top: 125vw; left: 45vw;}
     #eggduo {top: 176vw; left: 8vw;} 
@@ -144,7 +155,6 @@ footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margi
 
  /* Responsive tablet */
  @media screen and (min-width: 768px) {
-     body {height: 410vw;}
     /* Cards */
     .triocards {min-width: 144px; width: 73.53vw; left: 0px;}
     .cards {height: 26.11vw; width: 18.52vw;}
@@ -153,63 +163,100 @@ footer {position: absolute; bottom: 0px; text-align: center; width: 100vw; margi
     .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
     .cardquan {position: absolute; bottom: 4px; left: 4px; margin: 0px;}
     .cardimgs {width: 18.52vw; height: 18.52vw;}
-    .leftarrow {background-image: url(images/leftarrow.svg); width: 3.69vw; height: 1.68vw;background-size: contain;}
+    .leftarrow {background-image: url(images/leftarrow.svg); width: 3.69vw; height: 1.68vw;background-size: contain; background-repeat: no-repeat;}
     .rightarrow {background-image: url(images/rightarrow.svg); width: 3.69vw; height: 1.68vw;background-size: contain;}
     .ribbon {display: flex; justify-content: space-evenly; align-items: center; position: relative;}
      /* Hero */
     #roots {background-image: url(images/rootsfull.svg); width: 72.1vw; top: -0.1%; left: 13.5vw;}
-    #herologo {left: 43.5vw; width: 11.3vw; height: 12.04vw; max-width: 164px; max-height: 175.35px;}
+    #herologo {left: 43.5vw; width: 11.3vw; height: 12.04vw; margin-right: 0px;}
     #hero {height: 60vw;}
     #surface {top: -6%;}
     #earth {top: -6.8%; height: 373vw;}
-    #today {top: 25px; left: 15%; z-index: 1;}
-    .heroduo {width: 10vw; height: 105px; top: 32vw;}
-        .heroduo p {font-size: 12px;}
+    #today {top: 20vw; left: 15%; z-index: 1;}
+    #ulhero {position: absolute; display: flex; margin: 0px; top: 35vw; left: -1vw; height: 8.96vw; width: 100vw; z-index: 300;}
+    .heroduo {width: 12.85vw;}
+        .herotext {font-size: 12px;}
         .herogo {height: 5.76vw; width: 5.76vw;}
-        #exoduo {top: 32.5vw; left: 12.5vw;}
-        #quickduo {top: 33.33vw; left: 26vw;}
-        #eggduo {top: 33.33vw; left: 40vw;} 
-        #ideaduo {top: 32.7vw; left: 53vw;}
-        #adviduo {top: 31.8vw; left: 66vw;}
-        #eartduo {top: 33.5vw; left: 80vw;}
+        #exoduo {top: 0vw; left: 12.5vw;}
+        #quickduo {top: 0vw; left: 26vw;}
+        #eggduo {top: 0vw; left: 40vw;} 
+        #ideaduo {top: 0vw; left: 53vw;}
+        #adviduo {top: 0vw; left: 66vw;}
+        #eartduo {top: 0vw; left: 80vw;}
     /* Selections */
     #selections {width: 100vw; height: 47.85vw;}
     #triocardhidden {display: none;}
-    .selectitle {position: absolute; top: 37px; display: flex; width: 18vw; font-size: 18px; font-family: "Graphik"; padding: 0px;}
-    #selections .ribbon {top: 14vw;}
-    #selecseed {left: 27.55vw;}
-    #selecusers {right: 27.55vw;}
+    .selectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw; font-size: 18px; font-family: "Graphik"; padding: 0px;}
+    #selections .ribbon {top: 15vw;}
+    #selecseed {left: 25.5vw;}
+    #selecusers {right: 25.5vw;}
     .cards {margin: 0px;}
     /* Why */
     #why {height: 34.3vw;}
-    #whys {margin-top: 0px;}
+    #whys {margin-top: 0px; margin-bottom: 0px;}
+    .whyogo {position: relative; background-size: contain; height: 5.76vw; width: 5.76vw; background-repeat: no-repeat;}
+    .whyduo {width: 11vw;}
+    .whytext {position: relative; top: 1vw;}
     /* Seasonal Products */
     #season {height: 47.85vw; position: relative;}
+    h2 {padding: 6.6vw;}
+    .triocards {margin: 0px;}
     /* Knowmore */
     #divknowmore {height: 51.55vw;}
     .knowcards {margin-top: 77px; margin-bottom: 110px; width: 24.1vw; height: 42.02vw; margin: 0px;}
     .knowcardimgs {margin: 0px; width: 24.1vw; height: 35.91vw;}
     .knowmore {font-size: 24px; margin-top: 10px; font-weight: 400; width: 24.1vw; padding-top: 5px; padding-bottom: 5px; text-align: center; right: -0.5px;}
     #trioknow {top: 4.79vw; left: 6vw; width: 87.72vw; margin: 0px;}
-    #origin {left: -70px; bottom: 40px;}
-    #company {top: -51px; left: -56px;}
-    #commit {top: -30px; right: -50px;}
+    #origin {left: -10.21vw; bottom: -3vw;}
+    #company {top: -8.51vw; left: -9.17vw;}
+    #commit {top: -5.125vw; right: -10.21vw;}
     /* Footer */
-    footer {bottom: 0px; text-align: start;}
-    #linebackward {display: flex; justify-content: space-evenly; font-size: 12px;}
-    #paymean {margin-right: 0px; margin-left: 0px; width: 20vw;}
-    .footext {width: 13.20vw;}
+    footer {text-align: start; height: 34.48vw; min-height: 496px; top: 80px;}
+    h3 {font-size: 18px;}
+    #linebackward {display: flex; justify-content: space-evenly; font-size: 12px; margin-left: 12vw; margin-right: 12vw;}
+    #credit {margin-right: 0px; margin-left: 0px; width: 20vw; justify-content: start; position: relative; right: 4px;}
+    .footext {width: 20vw; margin-bottom: 0px;}
+    #linefooter {width: 80vw;}
+    #extras {width: 13vw;}
+    #afterline {display: flex; flex-direction: row-reverse; width: 75vw; justify-content: space-between; align-items: center;}
+    #newsbloc {width: 300px; align-items: start;}
+    #newsli label {position: relative; user-select: none; top: 21px; left: 15px;}
+    #ltd {width: 300px; padding: 0px;}
  }
 
  /* Responsive desktop */
  @media screen and (min-width: 1024px) {
-    #fixheader {display: none;}
-    #absheader {position: relative; display: block; width: 100vw; height: 185px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
-    #absheader ul {display: inline-block;}
-    #burger {position: relative; left: 5%; top: 31.5px; background-image: url("images/Burger.svg"); background-size: contain; height: 15px; width: 23px; }
-    #fixheader h1 {position: relative; top: 24px; left: 10%; margin: 0px;}
-    #triologofix {position: absolute; top: 24px; right: 5%; height: 30px; width: 30%; max-width: 131px; display: flex; justify-content: space-between; margin: 0px;}
-     .glass {background-image: url("images/Loupe.svg"); background-size: contain; width: 31px; height: 30px;}
-     .account {background-image: url("images/account.svg"); background-size: contain; width: 24px; height: 30px;}
-     .checkout {background-image: url("images/checkout.svg"); background-size: contain; width: 35.11px; height: 30px;}
+    main {top: 0px;}
+    #fixheader {z-index: 199;}
+    #absheader {z-index: 200; position: relative; display: flex; justify-content: space-evenly; align-items: center;background-color: white; width: 100vw; height: 12.85vw; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
+    #today {font-size: 36px;}
+    nav {display: flex; justify-content: space-between; font-size: 10px;}
+    #absheader h1 {font-size: 36px;}
+    #absheader h1 span {font-size: 18px;}
+    #logoheader {width: 6.11vw; height: 6.536vw; background-size: contain; margin-left: 2.92vw; margin-right: 2.92vw;}
+    .selectitle {width: 14vw; font-size: 18px;}
+    #selecseed {left: 29vw;}
+    #selecusers {right: 29vw;}
+    #fixtext {display: flex; width: 60vw; flex-direction: column; justify-content: center; align-items: space-evenly; text-align: center;}
+    #triologo {height: 2.85vw; width: 11.95vw; display: flex; justify-content: space-between; margin: 0px;}
+    #absaccount {width: 2.29vw; height: 2.85vw; width: }
+    #absglass {width: 2.93vw; height: 2.85vw;}
+    #abscheckout {width: 3.33vw; height: 2.85vw;}
+    #surface {left: -1vw;}
+    footer {top: 0px;}
+ }
+
+ @media screen and (min-width: 1440px) {
+    nav {display: flex; justify-content: space-between; font-size: 12px;}
+    #absheader h1 {position: relative; font-size: 48px;}
+    #absheader h1 span {position: relative; font-size: 24px;}
+    #today {font-size: 48px;}
+    .herotext {font-size: 18px; width: 11vw;}
+    .cards {font-size: 18px;}
+    .cardname {width: 12.9vw;}
+    .selectitle {font-size: 24px;}
+    #selecard3name {width: calc(100% - 8px);}
+    h2 {font-size: 48px;}
+    h3 {font-size: 24px; margin-bottom: 15px;}
+    .footext {font-size: 14px;}
  }
