@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width">
     <title>La Bonne Graine HomePage</title>
@@ -23,9 +23,9 @@
                 </nav>
             </div>
             <ul id = "triologo">
-                <li id = absaccount class = account></li>
-                <li id = absglass class = glass></li>
-                <li id = abscheckout class = checkout></li>
+                <div id = absaccount class = account></div>
+                <div id = absglass class = glass></div>
+                <div id = abscheckout class = checkout></div>
             </ul>
         </div>
 <!-- Header fixed -->
@@ -33,192 +33,198 @@
             <div id = "burger"></div>
             <h1 id = "fixh1">La Bonne Graine<span><br>Jardinez Authentique !</span></h1>
             <ul id = "triologofix">
-                <li class = account></li>
-                <li class = glass></li>
-                <li class = checkout></li>
+                <div class = account></div>
+                <div class = glass></div>
+                <div class = checkout></div>
             </ul>
         </div>
     </header>
     <main>
 <!-- Hero full image -->
-        <div id = "hero">
+        <section id = "hero">
             <div id = "herologo" class = "logo"></div>
             <div id = "surface"></div>
             <div id = "earth">
                 <div id = "roots"></div>
                 <p id = "today">DE QUOI AVEZ-VOUS BESOIN AUJOURD'HUI ?</p>
                 <ul id = "ulhero">
-                    <li id = "exoduo" class = "heroduo">
+                    <div id = "exoduo" class = "heroduo">
                         <div id = "exotic" class = "herogo"></div>
                         <p class = "herotext">De saveurs exotiques</p>
-                    </li>
-                    <li id = "quickduo" class = "heroduo">
+                    </div>
+                    <div id = "quickduo" class = "heroduo">
                         <div id = "quick" class = "herogo"></div>
                         <p class = "herotext">De graines à résultats rapides</p>
-                    </li>
-                    <li id = "eggduo" class = "heroduo">
+                    </div>
+                    <div id = "eggduo" class = "heroduo">
                         <div id = "eggs" class = "herogo"></div>
                         <p class = "herotext">De graines faciles à planter</p>
-                    </li>
-                    <li id = "ideaduo" class = "heroduo">
+                    </div>
+                    <div id = "ideaduo" class = "heroduo">
                         <div id = "idea" class = "herogo"></div>
                         <p class = "herotext">De bons plans</p>
-                    </li>
-                    <li id = "adviduo" class = "heroduo">
+                    </div>
+                    <div id = "adviduo" class = "heroduo">
                         <div id = "advice" class = "herogo"></div>
                         <p class = "herotext">De conseils</p>
-                    </li>
-                    <li id = "eartduo" class = "heroduo">
+                    </div>
+                    <div id = "eartduo" class = "heroduo">
                         <div id = "planet" class = "herogo"></div>
                         <p class = "herotext">De connaître nos engagements</p>
+                    </div>
                 </ul>
             </div>
-        </div>
+        </section>
 <!-- Selections -->
-        <div id = "selections">
+        <section id = "selections">
             <h2 class = "selectitle" id = "selecseed">La sélection de la bonne graine</h2>
-            <div class = "ribbon">
+            <div id = "seedcards" class = "ribbon">
                 <div class = "leftarrow"></div>
-                <ul class = "triocards">
-                    <li id = "selecard1" class = "cards">
+                <div  class = "triocards">
+                    <article id = "selecard1" class = "cards">
                         <div id = "selecard1img" class = cardimgs></div>
                         <p id = "selecard1name" class = "cardname">Ramasse-fruit</p>
                         <p id = "selecard1price" class = "cardprice">1.80€</p>
                         <p id = "selecard1quan" class = "cardquan"></p>
                         <p id = "selecard1ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "selecard2" class = "cards">
+                    </article>
+                    <article id = "selecard2" class = "cards">
                         <div id = "selecard2img" class = cardimgs></div>
                         <p id = "selecard2name" class = "cardname">Carré potager 12 compartiments</p>
                         <p id = "selecard2price" class = "cardprice">1.80€</p>
                         <p id = "selecard2quan" class = "cardquan"></p>
                         <p id = "selecard2ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "selecard3" class = "cards">
+                    </article>
+                    <article id = "selecard3" class = "cards">
                         <div id = "selecard3img" class = cardimgs></div>
                         <p id = "selecard3name" class = "cardname">Salades : Pour une année douce, avec une pointe d'amertume ou franchement relevée ?</p>
                         <p id = "selecard3price" class = "cardprice"></p>
                         <p id = "selecard3quan" class = "cardquan"></p>
                         <p id = "selecard3ava" class = "cardava"></p>
-                    </li>
-                </ul>
+                    </article>
+                </div>
                 <div class = "rightarrow"></div>
             </div>
-                <h2 class = "selectitle" id = "selecusers">La sélection des utilisateurs</h2>
-            <div class = "ribbon">
-                <ul id = "triocardhidden" class = "triocards">
-                    <li id = "selecard4" class = "cards">
-                        <div id = "selecard4img" class = cardimgs></div>
+            <h2 class = "selectitle" id = "selecusers">La sélection des utilisateurs</h2>
+            <div id = "userscards" class = "ribbon">
+                <div class = "leftarrow"></div>
+                <div class = "triocards">
+                    <article id = "selecard4" class = "cards">
+                    <div id = "selecard4img" class = cardimgs></div>
                         <p id = "selecard4name" class = "cardname">Gants pour travaux ergo</p>
                         <p id = "selecard4price" class = "cardprice">3,22€</p>
                         <p id = "selecard4quan" class = "cardquan"></p>
                         <p id = "selecard4ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "selecard5" class = "cards">
+                    </article>
+                    <article id = "selecard5" class = "cards">
                         <div id = "selecard5img" class = cardimgs></div>
                         <p id = "selecard5name" class = "cardname">Courgette Lebanon</p>
                         <p id = "selecard5price" class = "cardprice">1,80€</p>
                         <p id = "selecard5quan" class = "cardquan">2g</p>
                         <p id = "selecard5ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "selecard6" class = "cards">
+                    </article>
+                    <article id = "selecard6" class = "cards">
                         <div id = "selecard6img" class = cardimgs></div>
                         <p id = "selecard6name" class = "cardname">Laitue Cocarde Bio</p>
                         <p id = "selecard6price" class = "cardprice">1,80€</p>
                         <p id = "selecard6quan" class = "cardquan">0,2g</p>
                         <p id = "selecard6ava" class = "cardava">En stock</p>
-                    </li>
-                </ul>
+                    </article>
+                </div>
+                <div class = "rightarrow"></div>
             </div>
-        </div>
+        </section>
 <!-- Why? -->
-        <div id = "why">
+        <section id = "why">
             <h2>Pourquoi La Bonne Graine ?</h2>
-            <ul id = "whys">
-                <li id = "quaduo" class = "whyduo">
+            <div id = "whys">
+                <div id = "quaduo" class = "whyduo">
                     <div id = "quality" class = "whyogo"></div>
                     <p class = "whytext">Une qualité germinative</p>
-                </li>
-                <li id = "transduo" class = "whyduo">
+                </div>
+                <div id = "transduo" class = "whyduo">
                     <div id = "transparency" class = "whyogo"></div>
                     <p class = "whytext">Une transparence</p>
-                </li>
-                <li id = "divduo" class = "whyduo">
+                </div>
+                <div id = "divduo" class = "whyduo">
                     <div id = "diversity" class = "whyogo"></div>
                     <p class = "whytext">Une diversité</p>
-                </li>
-                <li id = "autduo" class = "whyduo">
+                </div>
+                <div id = "autduo" class = "whyduo">
                     <div id = "authenticity" class = "whyogo"></div>
                     <p class = "whytext">Une authenticité</p>
-                </li>
-                <li id = "priduo" class = "whyduo">
+                </div>
+                <div id = "priduo" class = "whyduo">
                     <div id = "prices" class = "whyogo"></div>
                     <p class = "whytext">Des prix justes</p>
-                </li>
-                <li id = "shaduo" class = "whyduo">
+                </div>
+                <div id = "shaduo" class = "whyduo">
                     <div id = "share" class = "whyogo"></div>
                     <p class = "whytext">Un partage</p>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </div>
+        </section>
 <!-- Seasonal Products -->
-        <div id = "season">
+        <section id = "season">
             <h2>Nos Produits de Saison</h2>
             <div class = "ribbon">
                 <div class = "leftarrow"></div>
-                <ul class = "triocards">
-                    <li id = "seacard1" class = "cards">
+                <div class = "triocards">
+                    <article id = "seacard1" class = "cards">
                         <div id = "seacard1img" class = cardimgs></div>
-                        <p id = "seacard1name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                        <p id = "seacard1name" class = "cardname">Chou-fleur Merveille de toutes saisons</p>
                         <p id = "seacard1price" class = "cardprice">1,80€</p>
                         <p id = "seacard1quan" class = "cardquan">2g</p>
                         <p id = "seacard1ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "seacard2" class = "cards">
+                    </article>
+                    <article id = "seacard2" class = "cards">
                         <div id = "seacard2img" class = cardimgs></div>
-                        <p id = "seacard2name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                        <p id = "seacard2name" class = "cardname">Chou-fleur Merveille de toutes saisons</p>
                         <p id = "seacard2price" class = "cardprice">1,80€</p>
                         <p id = "seacard2quan" class = "cardquan">2g</p>
                         <p id = "seacard2ava" class = "cardava">En stock</p>
-                    </li>
-                    <li id = "seacard3" class = "cards">
+                    </article>
+                    <article id = "seacard3" class = "cards">
                         <div id = "seacard3img" class = cardimgs></div>
-                        <p id = "seacard3name" class = "cardname">Cbou-fleur Merveille de toutes saisons</p>
+                        <p id = "seacard3name" class = "cardname">Chou-fleur Merveille de toutes saisons</p>
                         <p id = "seacard3price" class = "cardprice">1,80€</p>
                         <p id = "seacard3quan" class = "cardquan">2g</p>
                         <p id = "seacard3ava" class = "cardava">En stock</p>
-                    </li>
-                </ul>
+                    </article>
+                </div>
                 <div class = "rightarrow"></div>
             </div>
-        </div>
+        </section>
 <!-- Know more -->
-        <div id = "divknowmore">
-            <ul id = "trioknow">
-                <li id = "knowcard1" class = "knowcards">
+        <section id = "divknowmore">
+            <div id = "trioknow">
+                <article id = "knowcard1" class = "knowcards">
+                    <p class = "hiddentext"><span>Origine<br></span><br>Des graines d'une origine irréprochable issues d'une agriculture responsable</p>
                     <div id = "knowcard1img" class = "knowcardimgs">
                         <h2 id = "origin">Origine</h2>
                     </div>
                     <p class = "knowmore">En savoir plus</p>
-                </li>
-                <li id = "knowcard2" class = "knowcards">
+                </article>
+                <article id = "knowcard2" class = "knowcards">
+                    <p class = "hiddentext"><span>Accompagnement<br></span><br>Un accompagnement de tous les instants à travers nos diverses ressources et services
                     <div id = "knowcard2img" class = "knowcardimgs">
                         <h2 id = "company">Accompagnement</h2>
                     </div>
                     <p class = "knowmore">En savoir plus</p>
-                </li>
-                <li id = "knowcard3" class = "knowcards">
+                </article>
+                <article id = "knowcard3" class = "knowcards">
+                    <p class = "hiddentext"><span>Engagements<br></span><br>Nous accordons une importance toute particulière au respect des agriculteurs</p>
                     <div id = "knowcard3img" class = "knowcardimgs">
                         <h2 id = "commit">Engagements</h2>
                     </div>
                     <p class = "knowmore">En savoir plus</p>
-                </li>
+                </article>
             </ul>
-        </div>
+        </section>
     </main>
 <!-- Footer -->
     <footer>
-        <section id = "linebackward">
+        <div id = "linebackward">
             <ul class = "footext"><h3>Informations</h3>
                 <li><br>Qui sommes-nous ?</li>
                 <li><br>Conditions générales de vente</li>
@@ -246,10 +252,10 @@
                     <li id = "cb" class = "pay"></li>
                 </ul>
             </ul>
-        </section>
-        <section id = "lineonward">
+        </div>
+        <div id = "lineonward">
             <div id = "linefooter"></div>
-            <section id = "afterline">
+            <div id = "afterline">
                 <ul id = "newsbloc">
                     <li>Inscrivez-vous à la newsletter</li>
                     <li id ="newsli">
@@ -264,8 +270,8 @@
                     </ul>
                 </ul>
                 <p id = "ltd">La Bonne Graine 2013 | Marque déposée</p>
-            </section>
-        </section>
+            </div>
+        </div>
     </footer>
  <script type="text/javascript" src = "bonnegrainehp.js"></script>
 </body>

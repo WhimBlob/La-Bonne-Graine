@@ -37,10 +37,9 @@ nav li:hover {text-decoration: underline;}
 #roots {position: relative; left: 23vw; top: -0.3%; height: 325vw; width: 60vw; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
 #today {position: absolute; top: 25px; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
 /* Icon duos */
-.heroduo {width: 160px; color: #6eb5db; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute;}
-.heroduo:hover {animation-name: twitchogo; animation-iteration-count: 2; animation-direction: alternate; animation-duration: 0.5s;}
+.heroduo {width: 160px; color: #6eb5db; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute; cursor: pointer;}
     .herotext {margin: 0px; font-size: 12px;}
-    .herogo {background-size: contain; background-repeat: no-repeat; height: 17.5vw; width: 17.5vw;}
+    .herogo {background-size: contain; background-repeat: no-repeat; height: 17.5vw; width: 17.5vw; transition: transform 0.3s;}
     .herotext {position: relative; top: 10px;}
     #exoduo {top: 71vw; left: 7vw;}
         #exotic {background-image: url(images/map.svg);}
@@ -69,8 +68,7 @@ nav li:hover {text-decoration: underline;}
 #why {background-color: #EAF7FF;}
 #whys {display: flex; flex-wrap: wrap; margin: 4.87vw; justify-content: space-between;}
 .whyduo {width: 30vw; display: flex; flex-direction: column; align-items: center; padding-bottom: 74px;}
-.whyogo {position: relative; background-size: contain; min-width: 66px; max-width: 88px; min-height: 66px; max-width: 88px;}
-.whyduo:hover {animation-name: twitchogo; animation-iteration-count: 2; animation-direction: alternate; animation-duration: 0.5s;}
+.whyogo {position: relative; background-size: contain; min-width: 66px; max-width: 88px; min-height: 66px; max-width: 88px; transition: transform 0.3s;}
 .whytext {position: relative; font-size: 12px; margin: 0px; top: 2px;}
 #quality {background-image: url(images/plant.svg);}
 #transparency {background-image: url(images/transparence.svg);}
@@ -88,6 +86,7 @@ nav li:hover {text-decoration: underline;}
 #divknowmore {background-color: #6DADBF; height: 163.9vw;}
 #trioknow {position: relative; top: 20.53vw; left: -57.7vw; margin: 0px; display: flex; width: calc(215.2vw); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
 .knowcards {position: relative; width: 64.935vw; height: 116.82vw;}
+.knowcards:hover {z-index: 0;}
 .knowcardimgs {position: relative; height: 100vw; width: 64.935vw; background-size: cover; margin-bottom: 18px; background-repeat: no-repeat;}
 #knowcard1img {background-image: url(images/engagements.svg);}
 #knowcard2img {background-image: url(images/origin.svg);}
@@ -186,10 +185,10 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
     .cardquan {position: absolute; bottom: 4px; left: 4px; margin: 0px;}
     .cardimgs {width: 18.52vw; height: 18.52vw;}
-    .leftarrow {background-image: url(images/leftarrow.svg); width: 3.69vw; height: 1.68vw;background-size: contain; background-repeat: no-repeat;}
-    .leftarrow:hover {animation-name: twitcharrowl; animation-duration: 0.3s; animation-iteration-count: 2; animation-direction: alternate;}
-    .rightarrow {background-image: url(images/rightarrow.svg); width: 3.69vw; height: 1.68vw;background-size: contain;}
-    .rightarrow:hover {animation-name: twitcharrowr; animation-duration: 0.3s;animation-iteration-count: 2; animation-direction: alternate;}
+    .leftarrow {background-image: url(images/leftarrow.svg); width: 3.69vw; height: 1.68vw; background-size: contain; background-repeat: no-repeat; cursor: pointer; transition: transform 0.3s;}
+    .leftarrow:hover {transform: translateX(-10%);}
+    .rightarrow {background-image: url(images/rightarrow.svg); width: 3.69vw; height: 1.68vw; background-size: contain; background-repeat: no-repeat; cursor: pointer; transition: transform 0.3s;}
+    .rightarrow:hover {transform: translateX(10%);}
     .ribbon {display: flex; justify-content: space-evenly; align-items: center; position: relative;}
      /* Hero */
     #roots {background-image: url(images/rootsfull.svg); width: 72.1vw; top: -0.1%; left: 13.5vw;}
@@ -202,6 +201,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .heroduo {width: 12.85vw;}
         .herotext {font-size: 12px;}
         .herogo {height: 5.76vw; width: 5.76vw;}
+        .herogo:hover {transform: translateY(-10%);}
         #exoduo {top: 0vw; left: 12.5vw;}
         #quickduo {top: 0vw; left: 26vw;}
         #eggduo {top: 0vw; left: 40vw;} 
@@ -210,17 +210,19 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
         #eartduo {top: 0vw; left: 80vw;}
     /* Selections */
     #selections {width: 100vw; height: 47.85vw;}
-    #triocardhidden {display: none;}
-    .selectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw; font-size: 18px; font-family: "Graphik"; padding: 0px;}
+    .triocardhidden {display: none;}
+    .selectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw; font-size: 18px; font-family: "Graphik"; padding: 0px; z-index: 5; cursor: pointer;}
     #selections .ribbon {top: 15vw;}
     #selecseed {left: 25.5vw;}
     #selecusers {right: 25.5vw;}
     .selectitle:hover {font-family: "Craft Holic"; font-size: 24px;}
+    .activeselectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw;; padding: 0px; z-index: 5; font-family: "Craft Holic"; font-size: 24px;}
     .cards {margin: 0px;}
     /* Why */
     #why {height: 34.3vw;}
     #whys {margin-top: 0px; margin-bottom: 0px;}
     .whyogo {position: relative; background-size: contain; height: 5.76vw; width: 5.76vw; background-repeat: no-repeat; max-width: none;}
+    .whyogo:hover {transform: translateY(-10%);}
     .whyduo {width: 11vw;}
     .whytext {position: relative; top: 1vw;}
     /* Seasonal Products */
@@ -230,8 +232,12 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     /* Knowmore */
     #divknowmore {height: 51.55vw;}
     .knowcards {margin-top: 77px; margin-bottom: 110px; width: 24.1vw; height: 42.02vw; margin: 0px;}
+    .hiddentext {position: absolute; width: 100%; height: 35.91vw; background-color: #AB7454; margin: 0px; color: #BCD5E6; font-size: 14px; box-sizing: border-box; padding: 3vw; border-color: #BCD5E6; padding-top: 11vw;}
+    .hiddentext span{font-size: 18px; font-family: "Craft Holic"; text-decoration: underline;}
     .knowcardimgs {margin: 0px; width: 24.1vw; height: 35.91vw;}
+    .knowcardimgs:hover {background-color: #AB7454; opacity: 0.02;}
     .knowmore {font-size: 24px; margin-top: 10px; font-weight: 400; width: 24.1vw; padding-top: 5px; padding-bottom: 5px; text-align: center; right: -0.5px;}
+    .knowmore:hover {background-color: #AB7454; color: #BCD5E6; border-color: #BCD5E6;}
     #trioknow {top: 4.79vw; left: 6vw; width: 87.72vw; margin: 0px;}
     #origin {left: -10.21vw; bottom: -3vw;}
     #company {top: -8vw; left: -9.17vw;}
@@ -260,7 +266,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #absheader h1 {font-size: 36px;}
     #absheader h1 span {font-size: 18px; top: 0.3vw;}
     #logoheader {width: 6.11vw; height: 6.536vw; background-size: contain; margin-left: 2.92vw; margin-right: 2.92vw;}
-    .selectitle {width: 14vw; font-size: 18px;}
+    .selectitle {width: 19vw; font-size: 18px;}
     #selecseed {left: 29vw;}
     #selecusers {right: 29vw;}
     #fixtext {display: flex; width: 60vw; flex-direction: column; justify-content: center; align-items: space-evenly; text-align: center;}
@@ -270,6 +276,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #abscheckout {width: 3.33vw; height: 2.85vw;}
     #surface {left: -1vw;}
     footer {top: 0px;}
+    .pay {height: 2vw; width: 3.3vw;}
  }
 
  @media screen and (min-width: 1440px) {
@@ -282,6 +289,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 24px;}
     .selectitle:hover {font-size: 36px;}
+    .activeselectitle {font-size: 36px;}
     #selecard3name {width: calc(100% - 8px);}
     .whytext {font-size: 18px;}
     .knowmore {font-size: 24px;}
@@ -296,6 +304,8 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
         .account {width: 1.6667vw; height: 2.08vw;}
         .checkout {width: 2.44vw; height: 2.08vw;}
         #newsli {margin-bottom: 1vw;}
+    .hiddentext {font-size: 18px;}
+    .hiddentext span{font-size: 24px;}
  }
 
 @media screen and (min-width: 1900px) {
@@ -311,6 +321,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 36px;}
     .selectitle:hover {font-size: 48px;}
+    .activeselectitle {font-size: 48px;}
     #selecard3name {width: calc(100% - 8px);}
     .whytext {font-size: 24px;}
     h2 {font-size: 56px;}
@@ -320,6 +331,8 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #newsbloc li {font-size: 14px;}
     #ltd {font-size: 14px;}
     #newsli label {font-size: 14px; top: 24px;}
+    .hiddentext {font-size: 24px;}
+    .hiddentext span{font-size: 36px;}
  }
 
  @media screen and (min-width: 2560px) {
@@ -335,6 +348,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .cardname {width: 12.9vw;}
     .selectitle {font-size: 48px;}
     .selectitle:hover {font-size: 60px;}
+    .activeselectitle {font-size: 60px;}
     .whytext {font-size: 36px;}
     #selecard3name {width: calc(100% - 8px);}
     h2 {font-size: 64px;}
@@ -345,16 +359,6 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #ltd {font-size: 18px; width: 15vw;}
     #newsbloc li {font-size: 18px;}
     #newsli label {font-size: 18px; top: 26px;}
- }
-
- @keyframes twitchogo {
-    to {transform: translateY(-1em)}
- }
-
- @keyframes twitcharrowl {
-    to {transform: translateX(-0.5em)}
- }
-
- @keyframes twitcharrowr {
-    to {transform: translateX(+0.5em)}
+    .hiddentext {font-size: 36px;}
+    .hiddentext span{font-size: 48px;}
  }
