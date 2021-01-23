@@ -26,8 +26,8 @@ a {text-decoration: none; color: black;}
 nav a:hover {text-decoration: underline;}
 
 /* Cards */
-.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; font-size: 12px; text-align: start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scroll-padding: 10vw;}
-.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden; scroll-snap-align: center; scroll-padding: 50%;}
+.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
+.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden;}
 .cardname {position: absolute; top: 148px; left: 4px; width: 83px; margin: 0px;}
 .cardprice {position: absolute; top: 148px; right: 4px; margin: 0px;}
 .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
@@ -43,6 +43,7 @@ nav a:hover {text-decoration: underline;}
         .glass {background-image: url("images/Loupe.svg"); background-size: contain; width: 31px; height: 30px;}
         .account {background-image: url("images/account.svg"); background-size: contain; width: 24px; height: 30px;}
         .checkout {background-image: url("images/checkout.svg"); background-size: contain; width: 35.11px; height: 30px;}
+    .searchbar {position: fixed; top: 0px; right: 0px; z-index: 151; outline-color: #C6E6B0; border-radius: 8px; border: #C6E6B0; height: 30px; width: 30vw; transition: transform 0.3s; animation-name: }
 
 /* Hero */
 #hero {position: relative; top: 0px; height: 395.7vw; background-color: #BCD5E6; overflow: hidden;}
@@ -107,6 +108,7 @@ nav a:hover {text-decoration: underline;}
 #knowcard1img {background-image: url(images/origin.svg); background-position: right;}
 #knowcard2img {background-image: url(images/accompagnement.svg);}
 #knowcard3img {background-image: url(images/engagements.svg);}
+.hiddentext {display: none;}
 /* Image text */
 .knowcardimgs h2 {position: absolute;}
 #origin {left: -70px; bottom: 40px;}
@@ -138,10 +140,6 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
 #newsletter {position: relative; border: solid; border-color: black; border-radius: 0px; border-width: 0.5px; background: transparent; width: 217px; height: 30px;}
 #newsbloc {width: 100vw; margin-right: 0px; display: flex; flex-direction: column; align-items: center;}
 input:focus {outline-color: black; border: none;}
-/* Le Label */
-label {position: absolute; user-select: none; z-index: 2; top: 18px; left: 18px; font-size: 12px;}
-#tcheck {text-indent: 18px; top:3px; left: 5px; padding: 0px; margin: 0px; display: block;}
-input:focus ~ label {transform: translateY(-21px) translateX(-5px); z-index:3; background: white; padding-left: 10px; padding-right: 10px; z-index: 78; font-size: 9px;}
 /* Social medias */
 #footogos {display: flex; width: 139px; justify-content: space-between; align-items: center;}
 .footogo {position: relative; top: 11px; width: 23px; height: 23px; background-size: contain; background-repeat: no-repeat;}
@@ -150,6 +148,11 @@ input:focus ~ label {transform: translateY(-21px) translateX(-5px); z-index:3; b
 #facebook {background-image: url(images/facebook2.svg);}
 #twitter {background-image: url(images/twitter2.svg); height: 18px;}
 #ltd {padding: 82px; width: 230px;}
+/* Animation */
+@keyframes search {
+   to { transform: translateY(80px)
+   }
+}
 
 /* Responsive mobile */
 @media screen and (min-width: 375px) {
@@ -251,7 +254,7 @@ input:focus ~ label {transform: translateY(-21px) translateX(-5px); z-index:3; b
     /* Knowmore */
     #divknowmore {height: 51.55vw;}
     .knowcards {margin-top: 77px; margin-bottom: 110px; width: 24.1vw; height: 42.02vw; margin: 0px;}
-    .hiddentext {position: absolute; width: 100%; height: 35.91vw; background-color: #AB7454; margin: 0px; color: #BCD5E6; font-size: 14px; box-sizing: border-box; padding: 3vw; border-color: #BCD5E6; padding-top: 11vw;}
+    .hiddentext {position: absolute; display: block; width: 100%; height: 35.91vw; background-color: #AB7454; margin: 0px; color: #BCD5E6; font-size: 14px; box-sizing: border-box; padding: 3vw; border-color: #BCD5E6; padding-top: 11vw;}
     .hiddentext span{font-size: 18px; font-family: "Craft Holic"; text-decoration: underline;}
     .knowcardimgs {margin: 0px; width: 24.1vw; height: 35.91vw;}
     .knowcardimgs:hover {background-color: #AB7454; opacity: 0.02;}
