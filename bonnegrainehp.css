@@ -26,7 +26,7 @@ a {text-decoration: none; color: black;}
 nav a:hover {text-decoration: underline;}
 
 /* Cards */
-.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;}
+.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overflow-x: scroll;}
 .cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden; scroll-snap-align: center; scroll-padding: 50%;}
 .cardname {position: absolute; top: 148px; left: 4px; width: 83px; margin: 0px;}
 .cardprice {position: absolute; top: 148px; right: 4px; margin: 0px;}
