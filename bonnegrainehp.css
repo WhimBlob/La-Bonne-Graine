@@ -25,6 +25,7 @@ ul {list-style: none; padding: 0px;}
 nav {list-style: none;}
 a {text-decoration: none; color: black;}
 nav a:hover {text-decoration: underline;}
+img {display: none;}
 
 /* Cards */
 .triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
