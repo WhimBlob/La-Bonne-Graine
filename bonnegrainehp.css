@@ -1,17 +1,33 @@
+Reset CSS
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, 
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+
+/* Doc */
 .logo {background-image: url("images/Logo.svg");}
 body {position: absolute; top: 0px; margin: 0px; width: fit-content; font-family: "Graphik", Arial; font-weight: 500; width: fit-content;}
 main {position: relative; top: 80px; display: flex; flex-direction: column; width: 100vw; text-align: center; overflow: hidden;}
-h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; text-align: center; line-height: 20px;}
+h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; margin: 0.67em; text-align: center; line-height: 20px;}
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
 h2 {font-family: "Craft Holic", Arial; font-size: 36px; padding: 38px; margin: 0px;}
 h3 {font-size: 18px; margin-bottom: 15px;}
 ul {list-style: none; padding: 0px;}
 nav {list-style: none;}
-nav li:hover {text-decoration: underline;}
+a {text-decoration: none; color: black;}
+nav a:hover {text-decoration: underline;}
 
 /* Cards */
-.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
-.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden;}
+.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); align-items: space-between; font-size: 12px; text-align: start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overflow-x: scroll;}
+.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden; scroll-snap-align: center; scroll-padding: 50%;}
 .cardname {position: absolute; top: 148px; left: 4px; width: 83px; margin: 0px;}
 .cardprice {position: absolute; top: 148px; right: 4px; margin: 0px;}
 .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
@@ -62,7 +78,7 @@ nav li:hover {text-decoration: underline;}
 #selecard3name {width: 135px;}
 #selecard4img {background-image: url(images/courgette.svg);}
 #selecard5img {background-image: url(images/gant.png);}
-#selecard6img {background-image: url(images/cocarde.png);}
+#selecard6img {background-image: url(images/cocarde.jpg);}
 
 /* Why */
 #why {background-color: #EAF7FF;}
@@ -87,10 +103,10 @@ nav li:hover {text-decoration: underline;}
 #trioknow {position: relative; top: 20.53vw; left: -57.7vw; margin: 0px; display: flex; width: calc(215.2vw); align-items: space-between; justify-content: space-between; font-size: 12px; text-align: start;}
 .knowcards {position: relative; width: 64.935vw; height: 116.82vw;}
 .knowcards:hover {z-index: 0;}
-.knowcardimgs {position: relative; height: 100vw; width: 64.935vw; background-size: cover; margin-bottom: 18px; background-repeat: no-repeat;}
-#knowcard1img {background-image: url(images/engagements.svg);}
-#knowcard2img {background-image: url(images/origin.svg);}
-#knowcard3img {background-image: url(images/accompagnement.svg);}
+.knowcardimgs {position: relative; height: 100vw; width: 64.935vw; background-size: cover; background-position: center; margin-bottom: 18px; background-repeat: no-repeat;}
+#knowcard1img {background-image: url(images/origin.svg); background-position: right;}
+#knowcard2img {background-image: url(images/accompagnement.svg);}
+#knowcard3img {background-image: url(images/engagements.svg);}
 /* Image text */
 .knowcardimgs h2 {position: absolute;}
 #origin {left: -70px; bottom: 40px;}
@@ -119,10 +135,13 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
 #linefooter {width: 58.668vw; background: black; border: solid black 2px; margin-top: 38px; margin-bottom: 38px; border-radius: 8px;}
 #afterline {display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;}
 /* Newsletter */
-#newsli {position: relative; width: 217px; height: 30px; margin-bottom: 11px;}
-#newsletter {position: relative; border: solid; border-color: black; border-radius: 0px; border-width: 0.5px; background: transparent; width: 211px; height: 26px;}
-#newsli label {position: relative; user-select: none; top: 21px; right: 75px;}
+#newsletter {position: relative; border: solid; border-color: black; border-radius: 0px; border-width: 0.5px; background: transparent; width: 217px; height: 30px;}
 #newsbloc {width: 100vw; margin-right: 0px; display: flex; flex-direction: column; align-items: center;}
+input:focus {outline-color: black; border: none;}
+/* Le Label */
+label {position: absolute; user-select: none; z-index: 2; top: 18px; left: 18px; font-size: 12px;}
+#tcheck {text-indent: 18px; top:3px; left: 5px; padding: 0px; margin: 0px; display: block;}
+input:focus ~ label {transform: translateY(-21px) translateX(-5px); z-index:3; background: white; padding-left: 10px; padding-right: 10px; z-index: 78; font-size: 9px;}
 /* Social medias */
 #footogos {display: flex; width: 139px; justify-content: space-between; align-items: center;}
 .footogo {position: relative; top: 11px; width: 23px; height: 23px; background-size: contain; background-repeat: no-repeat;}
@@ -252,7 +271,6 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #extras {width: 13vw;}
     #afterline {display: flex; flex-direction: row-reverse; width: 75vw; justify-content: space-between; align-items: center;}
     #newsbloc {width: 300px; align-items: start;}
-    #newsli label {position: relative; user-select: none; top: 21px; left: 15px;}
     #ltd {width: 300px; padding: 0px;}
  }
 
@@ -303,7 +321,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
         .glass {width: 2.15vw; height: 2.08vw;}
         .account {width: 1.6667vw; height: 2.08vw;}
         .checkout {width: 2.44vw; height: 2.08vw;}
-        #newsli {margin-bottom: 1vw;}
+        #newsli {margin-bottom: 1vw; margin-top: 1vx}
     .hiddentext {font-size: 18px;}
     .hiddentext span{font-size: 24px;}
  }
@@ -330,7 +348,6 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     .knowmore {font-size: 36px;}
     #newsbloc li {font-size: 14px;}
     #ltd {font-size: 14px;}
-    #newsli label {font-size: 14px; top: 24px;}
     .hiddentext {font-size: 24px;}
     .hiddentext span{font-size: 36px;}
  }
@@ -358,7 +375,6 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
     #newsbloc {width: 15vw;}
     #ltd {font-size: 18px; width: 15vw;}
     #newsbloc li {font-size: 18px;}
-    #newsli label {font-size: 18px; top: 26px;}
     .hiddentext {font-size: 36px;}
     .hiddentext span{font-size: 48px;}
  }
