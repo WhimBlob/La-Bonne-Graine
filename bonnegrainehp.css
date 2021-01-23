@@ -13,8 +13,9 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 
 /* Doc */
+html {overflow-x: hidden;}
 .logo {background-image: url("images/Logo.svg");}
-body {position: absolute; top: 0px; margin: 0px; width: fit-content; font-family: "Graphik", Arial; font-weight: 500; width: fit-content;}
+body {position: absolute; top: 0px; margin: 0px; width: fit-content; font-family: "Graphik", Arial; font-weight: 500; width: fit-content; overflow: hidden;}
 main {position: relative; top: 80px; display: flex; flex-direction: column; width: 100vw; text-align: center; overflow: hidden;}
 h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9927; margin: 0.67em; text-align: center; line-height: 20px;}
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
@@ -43,7 +44,9 @@ nav a:hover {text-decoration: underline;}
         .glass {background-image: url("images/Loupe.svg"); background-size: contain; width: 31px; height: 30px;}
         .account {background-image: url("images/account.svg"); background-size: contain; width: 24px; height: 30px;}
         .checkout {background-image: url("images/checkout.svg"); background-size: contain; width: 35.11px; height: 30px;}
-    .searchbar {position: fixed; top: 0px; right: 0px; z-index: 151; outline-color: #C6E6B0; border-radius: 8px; border: #C6E6B0; height: 30px; width: 30vw; transition: transform 0.3s; animation-name: }
+    /* .nosearch {display: none;}
+    .fixsearchbar {position: fixed; display: block; top: 50px; right: 0px; z-index: 151; outline: 2px #C6E6B0; border-color: #C6E6B0; border-radius: 8px; border-width: 1px; height: 30px; width: 30vw; transform: translateY(30px);} */
+    
 
 /* Hero */
 #hero {position: relative; top: 0px; height: 395.7vw; background-color: #BCD5E6; overflow: hidden;}
@@ -148,11 +151,6 @@ input:focus {outline-color: black; border: none;}
 #facebook {background-image: url(images/facebook2.svg);}
 #twitter {background-image: url(images/twitter2.svg); height: 18px;}
 #ltd {padding: 82px; width: 230px;}
-/* Animation */
-@keyframes search {
-   to { transform: translateY(80px)
-   }
-}
 
 /* Responsive mobile */
 @media screen and (min-width: 375px) {
@@ -238,7 +236,7 @@ input:focus {outline-color: black; border: none;}
     #selecseed {left: 25.5vw;}
     #selecusers {right: 25.5vw;}
     .selectitle:hover {font-family: "Craft Holic"; font-size: 24px;}
-    .activeselectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw;; padding: 0px; z-index: 5; font-family: "Craft Holic"; font-size: 24px;}
+    .activeselectitle {position: absolute; top: 6.6vw; display: flex; width: 19vw; padding: 0px; z-index: 5; font-family: "Craft Holic"; font-size: 24px;}
     .cards {margin: 0px;}
     /* Why */
     #why {height: 34.3vw;}
@@ -282,6 +280,8 @@ input:focus {outline-color: black; border: none;}
     main {top: 0px;}
     #fixheader {z-index: 199;}
     #absheader {z-index: 200; position: relative; display: flex; justify-content: space-evenly; align-items: center;background-color: white; width: 100vw; height: 12.85vw; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);}
+    /* .fixsearchbar {top: 50px; right: 0px; z-index: 151; outline-color: #C6E6B0; border-radius: 8px; border: #C6E6B0; height: 30px; width: 30vw; transform: translateY(30px); transition-duration: 0.3s;}
+    .abssearchbar {top: 12.85vw; right: 0px; width: 30vw; z-index: 151; outline-color: #C6E6B0; border-radius: 8px; border: #C6E6B0; height: 30px; position: absolute;} */
     #today {font-size: 36px;}
     nav {display: flex; justify-content: space-between; font-size: 10px;}
     #absheader h1 {font-size: 36px;}
