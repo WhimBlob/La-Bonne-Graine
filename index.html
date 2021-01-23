@@ -9,7 +9,7 @@
     <header>
 <!-- Header absolute -->
         <div id = "absheader">
-            <a id = "logoheader" class = "logo" href="https://www.labonnegraine.com/"></a>
+            <a id = "logoheader" class = "logo" href="https://www.labonnegraine.com/" alt="logo Bonne Graine"></a>
             <div id = "fixtext">
                 <h1>La Bonne Graine<span><br>Jardinez Authentique !</span></h1>
                 <nav>
@@ -23,18 +23,18 @@
                     <a href="https://www.labonnegraine.com/">ACCESSOIRES</a>
                 </nav>
             </div>
-            <ul id = "triologo">
+            <div id = "triologo">
                 <div id = "absglass" class = "glass"></div>
                 <div id = "absaccount" class = "account"></div>
                 <div id = "abscheckout" class = "checkout"></div>
-            </ul>
+            </div>
         </div>
 <!-- Header fixed -->
         <div id = "fixheader">
             <div id = "burger"></div>
             <h1 id = "fixh1">La Bonne Graine<span><br>Jardinez Authentique !</span></h1>
             <ul id = "triologofix">
-                <a class = account href="https://www.labonnegraine.com/"></a>
+                <a class = account href="https://www.labonnegraine.com/" name="account" alt="account"></a>
                 <div id = "fixglass" class = glass></div>
                 <div class = checkout></div>
             </ul>
@@ -227,40 +227,41 @@
 <!-- Footer -->
     <footer>
         <div id = "linebackward">
-            <ul class = "footext"><h3>Informations</h3>
-                <li><a href="https://www.labonnegraine.com/"><br>Qui sommes-nous ?</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Conditions générales de vente</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Mentions légales</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Nos Engagements</a></li>
-            </ul>
-            <ul class = "footext"><h3>Une question ?</h3>
-                <li><a href="https://www.labonnegraine.com/"><br>FAQ</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Formulaire de contact</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Nous contacter par mail</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Lundi - Vendred : 10h00 - 20h00</a></li>
-            </ul>
-            <ul class = "footext" id = "extras"><h3>Extras</h3>
-                <li><a href="https://www.labonnegraine.com/"><br>Espace Presse</a></li>
-                <li><a href="https://www.labonnegraine.com/"><br>Certificat bio</a></li>
-            </ul>
-            <ul class = "footext" id = "paymean"><h3>Moyens de paiement</h3>
-                    <ul id = "credit">
-                    <li id = "AE" class = "pay"></li>
-                    <li id = "cirrus" class = "pay"></li>
-                    <li id = "maestro" class = "pay"></li>
-                    <li id = "mastercard" class = "pay"></li>
-                    <li id = "visa" class = "pay"></li>
-                    <li id = "paypal" class = "pay"></li>
-                    <li id = "cb" class = "pay"></li>
-                </ul>
-            </ul>
+            <div class = "footext"><h3>Informations</h3>
+                <a href="https://www.labonnegraine.com/"><br>Qui sommes-nous ?</a>
+                <a href="https://www.labonnegraine.com/"><br>Conditions générales de vente</a>
+                <a href="https://www.labonnegraine.com/"><br>Mentions légales</a>
+                <a href="https://www.labonnegraine.com/"><br>Nos Engagements</a>
+            </div>
+            <div class = "footext"><h3>Une question ?</h3>
+                <a href="https://www.labonnegraine.com/"><br>FAQ</a>
+                <a href="https://www.labonnegraine.com/"><br>Formulaire de contact</a>
+                <a href="https://www.labonnegraine.com/"><br>Nous contacter par mail</a>
+                <a href="https://www.labonnegraine.com/"><br>Lundi - Vendred : 10h00 - 20h00</a>
+            </div>
+            <div class = "footext" id = "extras"><h3>Extras</h3>
+                <a href="https://www.labonnegraine.com/"><br>Espace Presse</a>
+                <a href="https://www.labonnegraine.com/"><br>Certificat bio</a>
+            </div>
+            <div class = "footext" id = "paymean"><h3>Moyens de paiement</h3>
+                <div id = "credit">
+                    <div id = "AE" class = "pay"></li>
+                    <div id = "cirrus" class = "pay"></li>
+                    <div id = "maestro" class = "pay"></li>
+                    <div id = "mastercard" class = "pay"></li>
+                    <div id = "visa" class = "pay"></li>
+                    <div id = "paypal" class = "pay"></li>
+                    <div id = "cb" class = "pay"></li>
+                </div>
+            </div>
         </div>
         <div id = "lineonward">
             <div id = "linefooter"></div>
             <div id = "afterline">
                 <div id = "newsbloc">
                     <p>Inscrivez-vous à la newsletter</p>
-                    <input type = "text" id = "newsletter" placeholder = "E-mail">
+                    <label for= "newsletter">newsletter</label>
+                    <input name = "newslettertype = "text" id = "newsletter" placeholder = "E-mail">
                     <div id ="footogos">
                         <a href="https://www.labonnegraine.com/"><div id = "pinterest" class = "footogo"></div></a>
                         <a href="https://www.labonnegraine.com/"><div id = "instagram" class = "footogo"></div></a>
