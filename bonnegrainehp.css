@@ -42,51 +42,13 @@ nav a:hover {text-decoration: underline;}
 img {display: none;}
 
 /* Cards */
-.triocards {position: relative; left: -72px; display: flex; min-width: 144px; width: calc(100vw + 144px); justify-content: space-between; font-size: 12px; text-align: start;}
-.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden;}
+.triocards {position: relative; display: flex; min-width: 144px; justify-content: space-between; font-size: 12px; text-align: start; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; overflow-x: scroll;}
+.cards {position: relative; min-height: 203px; height: 54.14vw; min-width: 144px; width: 38.46vw; box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.25); border-radius: 8px; margin-bottom: 44px; overflow: hidden; margin-left: 20px;	scroll-snap-align: center;}
 .cardname {position: absolute; top: 148px; left: 4px; width: 83px; margin: 0px;}
 .cardprice {position: absolute; top: 148px; right: 4px; margin: 0px;}
 .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
 .cardquan {position: absolute; bottom: 4px; left: 4px; margin: 0px;}
 .cardimgs {min-width: 144px; width: 38.46vw; min-height: 144px; height: 38.46vw; background-size: contain; background-repeat: no-repeat;}
-/* * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-body {
-	overflow-y: hidden;
-}
-.slider {
-	font-family: sans-serif;
-	scroll-snap-type: x mandatory;	
-	display: flex;
-	-webkit-overflow-scrolling: touch;
-	overflow-x: scroll;
-}
-section {
-	border-right: 1px solid white;
-	padding: 1rem;
-	min-width: 100vw;
-	height: 100vh;
-	scroll-snap-align: start;
-	text-align: center;
-	position: relative;
-}
-h1	{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-	color: white;
-	width: 100%;
-	left: 0;
-	font-size: calc(1rem + 3vw);
-} */
-
-
-
-
 
 /* Fixed Header */
 #absheader {display: none;}
@@ -131,7 +93,7 @@ h1	{
 .pay, .footext a {display: list-item; list-style: none;}
 
 /* Selections */
-#selections {position: relative; top: 0px; overflow: hidden;}
+#selections {position: relative; top: 0px;}
 #selecard1img {background-image: url(images/ramassefruit.png);}
 #selecard2img {background-image: url(images/carrepotager.png);}
 #selecard3img {background-image: url(images/salade.png);}
@@ -256,7 +218,7 @@ label {position: relative; bottom: 1em;}
  /* Responsive tablet */
  @media screen and (min-width: 768px) {
   /* Cards */
-  .triocards {min-width: 144px; width: 73.53vw; left: 0px;}
+  .triocards {min-width: 144px; width: 73.53vw; left: 0px; overflow-x: visible;}
   .cards {height: 26.11vw; width: 18.52vw;}
   .cardname {top: calc(18.52vw + 4px); left: 4px; width: 83px; margin: 0px;}
   .cardprice {position: absolute; top: calc(18.52vw + 4px); right: 4px; margin: 0px;}
