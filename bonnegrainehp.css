@@ -1,4 +1,4 @@
-Reset CSS
+/* Reset CSS */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, 
 cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 
@@ -11,6 +11,19 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 
+@font-face {
+    font-family: "Dinoko";
+    src: url("/dinoko/Dinoko-Regular.otf")
+}
+@font-face {
+    font-family: "Craft Holic";
+    src: url("/craft_holic/CraftHolic.otf")
+}
+@font-face {
+    font-family: "Graphik";
+    src:  url("/Graphik-font-family/GraphikRegular.otf"),
+          url("/Graphik-font-family/GraphikMedium.otf")
+}
 
 /* Doc */
 html {overflow-x: hidden;}
@@ -21,7 +34,7 @@ h1 {min-width: 140px; font-family: "Dinoko", Arial; font-size: 24px; color: #5A9
 h1 span {position: relative; top: -5px; font-family: "Craft Holic", Arial; font-size: 14px; color: #C6E6B0; line-height: 14px;}
 h2 {font-family: "Craft Holic", Arial; font-size: 36px; padding: 38px; margin: 0px;}
 h3 {font-size: 18px; margin-bottom: 15px;}
-ul {list-style: none; padding: 0px;}
+ul {padding: 0px;}
 nav {list-style: none;}
 a {text-decoration: none; color: black;}
 nav a:hover {text-decoration: underline;}
@@ -74,6 +87,9 @@ img {display: none;}
         #advice {background-image: url(images/advice.svg);}
     #eartduo {top: 323vw; left: 47vw;}
         #planet {background-image: url(images/earth.svg);}
+/* Restore ul/li styles */
+#credit, .footext { list-style-type: disc;}
+.pay, .footext a {display: list-item; text-align: -webkit-match-parent; list-style: none;}
 
 /* Selections */
 #selections {position: relative; top: 0px; overflow: hidden;}
@@ -122,7 +138,7 @@ img {display: none;}
 .knowmore {position: absolute; font-size: 24px; font-weight: 400; background-color: #C6E6B0; border: solid 0.5px black; width: 64.935vw; padding-top: 2vw; padding-bottom: 2vw; text-align: center; margin: 0px;}
 
 /* Footer */
-footer {position: relative; text-align: center; width: 100vw; background-color: #C6E6B0;}
+footer {z-index: 1; position: relative; text-align: center; width: 100vw; background-color: #C6E6B0;}
 #linebackward {position: relative; top: 40px;}
 .footext {margin-top: 38px; margin-bottom: 77px; position: relative;}
 /* Paymeans */
@@ -145,7 +161,7 @@ footer {position: relative; text-align: center; width: 100vw; background-color: 
 #newsbloc {width: 100vw; margin-right: 0px; display: flex; flex-direction: column; align-items: center;}
 #newsletter input {height: 30px;}
 input:focus {outline-color: black; border: none;}
-label {display: none;}
+label {position: relative; bottom: 1em;}
 /* Social medias */
 #footogos {display: flex; width: 139px; justify-content: space-between; align-items: center;}
 .footogo {position: relative; top: 11px; width: 23px; height: 23px; background-size: contain; background-repeat: no-repeat;}
@@ -154,6 +170,7 @@ label {display: none;}
 #facebook {background-image: url(images/facebook2.svg);}
 #twitter {background-image: url(images/twitter2.svg); height: 18px;}
 #ltd {padding: 82px; width: 230px;}
+
 
 /* Responsive mobile */
 @media screen and (min-width: 375px) {
@@ -266,7 +283,7 @@ label {display: none;}
     #company {top: -8vw; left: -9.17vw;}
     #commit {top: -5.125vw; right: -10.21vw;}
     /* Footer */
-    footer {text-align: start; height: 34.48vw; min-height: 496px; top: 80px;}
+    footer {text-align: start; height: 34.48vw; min-height: 580px; top: 80px;}
     h3 {font-size: 18px;}
     #linebackward {display: flex; justify-content: space-evenly; font-size: 12px; margin-left: 12vw; margin-right: 12vw;}
     #credit {margin-right: 0px; margin-left: 0px; width: 20vw; justify-content: start; position: relative; right: 4px;}
@@ -352,7 +369,7 @@ label {display: none;}
     h3 {font-size: 36px; margin-bottom: 15px;}
     .footext {font-size: 18px;}
     .knowmore {font-size: 36px;}
-    #newsbloc li {font-size: 14px;}
+    #newsbloc div {font-size: 14px;}
     #ltd {font-size: 14px;}
     .hiddentext {font-size: 24px;}
     .hiddentext span{font-size: 36px;}
@@ -380,7 +397,7 @@ label {display: none;}
     .knowmore {font-size: 48px;}
     #newsbloc {width: 15vw;}
     #ltd {font-size: 18px; width: 15vw;}
-    #newsbloc li {font-size: 18px;}
+    #newsbloc div {font-size: 18px;}
     .hiddentext {font-size: 36px;}
     .hiddentext span{font-size: 48px;}
  }
