@@ -49,6 +49,44 @@ img {display: none;}
 .cardava {position: absolute; bottom: 4px; right: 4px; margin: 0px;}
 .cardquan {position: absolute; bottom: 4px; left: 4px; margin: 0px;}
 .cardimgs {min-width: 144px; width: 38.46vw; min-height: 144px; height: 38.46vw; background-size: contain; background-repeat: no-repeat;}
+/* * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	overflow-y: hidden;
+}
+.slider {
+	font-family: sans-serif;
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+}
+section {
+	border-right: 1px solid white;
+	padding: 1rem;
+	min-width: 100vw;
+	height: 100vh;
+	scroll-snap-align: start;
+	text-align: center;
+	position: relative;
+}
+h1	{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	width: 100%;
+	left: 0;
+	font-size: calc(1rem + 3vw);
+} */
+
+
+
+
 
 /* Fixed Header */
 #absheader {display: none;}
@@ -308,6 +346,7 @@ label {position: relative; bottom: 1em;}
   #absheader h1 span {font-size: 18px; top: 0.3vw;}
   #logoheader {width: 6.11vw; height: 6.536vw; background-size: contain; margin-left: 2.92vw; margin-right: 2.92vw;}
   .selectitle {width: 19vw; font-size: 18px;}
+  #triologo div {background-repeat: no-repeat;}
   #selecseed {left: 29vw;}
   #selecusers {right: 29vw;}
   #fixtext {display: flex; width: 60vw; flex-direction: column; justify-content: center; text-align: center;}
@@ -316,7 +355,7 @@ label {position: relative; bottom: 1em;}
   #absglass {width: 2.93vw; height: 2.85vw;}
   #abscheckout {width: 3.33vw; height: 2.85vw;}
   #surface {left: -1vw;}
-  footer {top: 0px;}
+  footer {top: 0px; min-height: 420px;}
   .pay {height: 2vw; width: 3.3vw;}
  }
 
@@ -347,6 +386,7 @@ label {position: relative; bottom: 1em;}
     #newsli {margin-bottom: 1vw; margin-top: 1vw}
   .hiddentext {font-size: 18px;}
   .hiddentext span{font-size: 24px;}
+  footer {min-height: 0;}
  }
 
 @media screen and (min-width: 1900px) {
