@@ -66,11 +66,20 @@ img {display: none;}
 /* Hero */
 #hero {position: relative; top: 0px; height: 395.7vw; background-color: #BCD5E6; overflow: hidden;}
 #herologo {z-index: 100; position: relative; left: 39.2157%; width: 21.3vw; height: 22.775vw; background-image: url("images/Logo.svg"); background-size: contain;}
+#herologo:hover {transform: translateY(10%); cursor: pointer; transition: transform 0.3s;}
+.logonohover {pointer-events: none; transform: translateY(10%);}
 /* Earth */
-#surface {position: relative; top: -0.8%; left: -0.5vw; height: 3.85vw; width: 101vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
-#earth {position: relative; top: -1%; background-color: #AB7454; height: 373vw; z-index: 0;}
+#surface {position: relative; top: -0.6%; left: -0.5vw; height: 3.85vw; width: 101vw; background-image: url(images/soil.svg); background-size: contain; background-repeat: no-repeat;}
+#earth {position: relative; top: -0.8%; background-color: #AB7454; height: 373vw; width: 100vw; z-index: 0;}
 #roots {position: relative; left: 23vw; top: -0.3%; height: 325vw; width: 60vw; background-image: url(images/Roots.svg); background-size: contain; background-repeat: no-repeat;}
 #today {position: absolute; top: 25px; left: 15%; z-index: 1; font-family: "Craft Holic", Arial; font-size: 25px; width: 70vw; color: white; text-align: center;}
+/* Test */
+#lablogo {position: relative;}
+#hero {height: 24vw;}
+#surface {top: -2.5vw;}
+#earth {position: absolute; top: 24vw;}
+
+
 /* Icon duos */
 .heroduo {width: 160px; color: #6eb5db; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: absolute; cursor: pointer;}
   .herotext {margin: 0px; font-size: 12px;}
@@ -234,8 +243,10 @@ label {position: relative; bottom: 1em;}
   #roots {background-image: url(images/rootsfull.svg); width: 72.1vw; top: -0.1%; left: 13.5vw;}
   #herologo {left: 43.5vw; width: 11.3vw; height: 12.04vw; margin-right: 0px;}
   #hero {height: 60vw;}
-  #surface {top: -6%;}
-  #earth {top: -6.8%; height: 373vw;}
+  /* test  */
+  #hero {height: 13vw;}
+  /* #surface {top: -6%;} */
+  #earth {top: 13.4vw; height: 373vw;}
   #today {top: 20vw; left: 15%; z-index: 1;}
   #ulhero {position: absolute; display: flex; margin: 0px; top: 35vw; left: -1vw; height: 8.96vw; width: 100vw; z-index: 300;}
   .heroduo {width: 12.85vw;}
